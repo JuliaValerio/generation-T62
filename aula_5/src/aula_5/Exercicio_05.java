@@ -8,19 +8,19 @@ public class Exercicio_05 {
 				// Pilha
 				Scanner leia = new Scanner(System.in);
 				Stack<String> livros = new Stack<String>();
-				int opcao = 0;
-				String livro = new String();
+				byte opcao = 0;
+				String livro;
 				
 				do {
 					
 					System.out.println("***************************");
 					System.out.println("1- Adicionar Livro na Pilha");
 					System.out.println("2- Listar todos os Livros");
-					System.out.println("3- Buscar um livro na pilha ");
+					System.out.println("3- retirar um livro na pilha ");
 					System.out.println("0- Sair");
 					System.out.println("***************************");
 					System.out.println("Digite uma opcao: ");
-					opcao = leia.nextInt();
+					opcao = leia.nextByte();
 					switch (opcao) {
 					
 					case 0:
@@ -30,8 +30,13 @@ public class Exercicio_05 {
 						System.out.println("Digite o nome: ");
 						livro = leia.nextLine();
 						livros.add(livro);
-						System.out.println("\nLivro adicionado!");
 						
+						System.out.println("\nPilha: ");
+						for(var eLivro : livros) {
+							System.out.println(eLivro);
+						}
+						
+						System.out.println("\nLivro adicionado!");
 						break;
 					case 2:
 						if (livros.isEmpty()) {
