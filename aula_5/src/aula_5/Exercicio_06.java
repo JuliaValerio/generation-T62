@@ -4,10 +4,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
+
+
 public class Exercicio_06 {
 
 	public static void main(String[] args) {
-
+		// Fila
 		Queue<String> fila = new LinkedList<String>();
 
 		Scanner leia = new Scanner(System.in);
@@ -16,7 +18,7 @@ public class Exercicio_06 {
 		String nome = "";
 
 		do {
-			System.out.println("----------------------------------------");
+			System.out.println("****************************************");
 			System.out.println("1 - Adicionar um novo cliente na fila");
 			System.out.println("2 - Listar todos os Clientes na fila");
 			System.out.println("3 - Retirar uma pessoa da fila ");
