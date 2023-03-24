@@ -1,6 +1,8 @@
 package conta.controller;
 
 import java.util.Scanner;
+
+import conta.model.Conta;
 import conta.util.Cores;
 
 public class Menu {
@@ -12,8 +14,20 @@ public class Menu {
 		int opcao, numero, agencia, tipo, aniversario, numeroDestino;
 		String titular;
 		float saldo, limite, valor;
-
-		while (true) {
+	  	
+		Conta c1 = new Conta(123456, 123, 1, "Julia Valerio", 250000.0f);
+    	c1.visualizar();
+		
+    	c1.sacar(500000.0f);
+    	c1.visualizar();
+    	
+    	c1.depositar(10000.0f);
+    	c1.visualizar();
+    	
+    	c1.sacar(5000.0f);
+    	c1.visualizar();
+    	
+    	while (true) {
 
 			System.out.println(Cores.ANSI_BLACK_BACKGROUND + Cores.TEXT_CYAN_BRIGHT
 					+ "******************************************************");
