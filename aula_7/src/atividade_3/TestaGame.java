@@ -3,7 +3,12 @@ package atividade_3;
 public class TestaGame {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Produto produto1 = new Produto(1, "Resident Evil 4 Remake", 250.00f, 2023, 10);
+		Produto produto2 = new Produto(2, "Dead Space Remake", 250.00f, 2023, 9.5f);
+		
+		produto1.visualizar();
+		System.out.println("\n");
+		produto2.visualizar();
 
 	}
 
